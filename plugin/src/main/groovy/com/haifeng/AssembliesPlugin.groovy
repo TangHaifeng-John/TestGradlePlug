@@ -8,9 +8,7 @@ class AssembliesPlugin implements Plugin<Project> {
     @Override
     void apply(Project project) {
         println("apply project : " + project.getName())
-        project.task('test1Task') << {
-            println "Hello gradle plugin"
-        }
+
     }
 
     /**
